@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            color: #e5e7eb;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.9);
+            padding: 2.5rem;
+            border-radius: 20px;
+            max-width: 500px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #facc15;
+        }
+
+        h2 {
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.7rem 1.5rem;
+            border-radius: 999px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: #f43f5e;
+            color: white;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            color: #a7f3d0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Happy New Year 🎆</h1>
+    <h2>To all of my pokkies</h2>
+
+    <p>
+        Another year is ending, and I just want you to know how grateful I am for you.
+        The laughs, the support, the memories — none of it would be the same without you.
+    </p>
+
+    <button onclick="showLove()">Click for my message</button>
+
+    <div id="loveMessage" class="hidden">
+        ❤️ I love you all. Thank you for being part of my life.  
+        I hope the new year brings us more moments together.
+        even if i met you lately or one of my old firends
+        i'm so grateful for you being a part of my life
+    </div>
+
+    <footer>
+        — From Fares, with love
+    </footer>
+</div>
+
+<script>
+    function showLove() {
+        document.getElementById("loveMessage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
